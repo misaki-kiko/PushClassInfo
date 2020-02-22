@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Flasky{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-default" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+菜单</button>
+<a class="navbar-brand" href="/">{{site_title}}</a> </div>
+<div class="navbar-collapse collapse"> <ul class="nav navbar-nav">
+<li><a href="/">主页</a></li>
+<li><a href="/list">课程列表</a></li>
+<li><a href="/">添加课程</a></li>
+<li><a href="/">删除课程</a></li>
+<li><a href="/">修改课程</a></li></ul>
+             </div>
+         </div>
+</div>
+{% endblock %}
+{% block content %} <div class="container">
+{% block page_content %}{% endblock %} </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ site_title }} {% endblock %}
+
+{% block page_content %}
+
+    <div class="jumbotron">
+        <h1 class="class-list">用钉钉群课表推送</h1>
+        <p>没有什么特别的，选择下面的链接可以查看课表信息哦</p>
+    </div>
+    <ul  class="center-block nav navbar-nav nav-pills nav-stacked" style="text-align: center;font-size: 1.5em;">
+        <li style="border: cadetblue 1px solid;border-radius: 10px;margin-bottom: 10px"><a href="/list" style="color:cadetblue">课程列表</a></li>
+        <li style="border: cadetblue 1px solid;border-radius: 10px;margin-bottom: 10px"><a href="/" style="color:cadetblue">添加课程</a></li>
+        <li style="border: cadetblue 1px solid;border-radius: 10px;margin-bottom: 10px"><a href="/" style="color:cadetblue">删除课程</a></li>
+        <li style="border: cadetblue 1px solid;border-radius: 10px;margin-bottom: 10px"><a href="/" style="color:cadetblue">修改课程</a></li>
+    </ul>
+
+{% endblock %}
